@@ -1,0 +1,18 @@
+[package]
+name = "trouble"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "0.2.21", features = ["full"] }
+reqwest = "0.10.6"
+tiny_http = "0.12.0"
+log = "0.4.17"
+pretty_env_logger = "0.4.0"
+backoff = "0.4.0"
+backoff-futures = "0.3.2"
+
+[patch.crates-io]
+backoff-futures = { path = "vendor/backoff-futures" }
